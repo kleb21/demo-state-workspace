@@ -6,6 +6,78 @@
 
 [Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/tutorials/angular-monorepo-tutorial?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
 
+## 🎯 Microfrontends y Nx: Arquitectura Moderna
+
+Este workspace implementa una arquitectura de **Microfrontends con Module Federation** utilizando **Nx** como herramienta de monorepo.
+
+### 📦 ¿Qué son los Microfrontends?
+
+Los microfrontends son una arquitectura que divide una aplicación frontend en piezas más pequeñas e independientes:
+
+- **Desarrollo Independiente**: Equipos diferentes pueden trabajar en módulos separados sin interferir entre sí
+- **Despliegue Independiente**: Cada microfrontend puede desplegarse sin afectar a los demás
+- **Tecnología Agnóstica**: Posibilidad de usar diferentes frameworks o versiones en cada módulo
+- **Escalabilidad**: Equipos y aplicaciones pueden crecer de forma independiente
+- **Reutilización de Código**: Componentes compartidos entre múltiples aplicaciones
+
+### 🛠️ ¿Qué es Nx?
+
+Nx es una herramienta de construcción de monorepos que optimiza el desarrollo de aplicaciones a gran escala:
+
+- **Generación de Código**: Scaffolding automático con generadores y schematics
+- **Caché Inteligente**: Reutiliza builds anteriores para acelerar el desarrollo
+- **Análisis de Dependencias**: Visualiza y gestiona las relaciones entre proyectos
+- **Testing Eficiente**: Ejecuta solo los tests afectados por cambios
+- **CI/CD Optimizado**: Builds incrementales y ejecución paralela de tareas
+
+### 🚀 Ventajas de Usar Microfrontends + Nx
+
+La combinación de ambos ofrece beneficios únicos:
+
+1. **Gestión Simplificada del Monorepo**
+   - Nx maneja las complejidades de múltiples microfrontends en un solo repositorio
+   - Configuración centralizada pero proyectos independientes
+
+2. **Module Federation Integrado**
+   - Soporte nativo para Webpack Module Federation
+   - Configuración automática de hosts y remotes
+
+3. **Optimización de Builds**
+   - Solo construye los microfrontends afectados por cambios
+   - Caché distribuido reduce tiempos de build hasta en 10x
+
+4. **Dependencias Compartidas**
+   - Librerías compartidas (`libs/`) para código común
+   - Versionado consistente entre todos los microfrontends
+
+5. **Developer Experience Mejorado**
+   - Hot reload funciona entre microfrontends
+   - Debugging integrado de múltiples aplicaciones
+   - Nx Console para operaciones visuales
+
+6. **Escalabilidad Empresarial**
+   - Estructura clara para equipos grandes
+   - Boundaries y restricciones de acceso entre módulos
+   - Migración y refactoring asistidos
+
+### 🏗️ Arquitectura de Este Workspace
+
+```
+┌─────────────────┐
+│  monarch-main   │ ← Aplicación Host Principal
+│   (Host App)    │
+└────────┬────────┘
+         │
+         ├── apps/projects    → Microfrontend Projects
+         ├── apps/contractors → Microfrontend Contractors  
+         └── apps/wageData    → Microfrontend Wage Data
+         │
+         ├── libs/layout   → UI Compartida
+         └── libs/shared   → Servicios Compartidos
+```
+
+---
+
 ## Finish your remote caching setup
 
 [Click here to finish setting up your workspace!](https://cloud.nx.app/connect/ksnH7ih0Pd)
