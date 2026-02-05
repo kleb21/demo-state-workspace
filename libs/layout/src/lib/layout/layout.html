@@ -1,0 +1,28 @@
+<nav class="w-dvw h-15 bg-green-700 flex justify-center items-center gap-6 px-8"></nav>
+
+<div class="flex h-[calc(100vh-3.75rem)]">
+    <aside class="w-64 bg-gray-100 border-r border-gray-300 p-4">
+        <nav class="flex flex-col gap-2">
+            <a routerLink="home" routerLinkActive="bg-green-600 text-white"
+                class="px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors">
+                Home
+            </a>
+            <a routerLink="/projects" routerLinkActive="bg-green-600 text-white"
+                class="px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors">
+                Projects
+            </a>
+            <a routerLink="/contractors" routerLinkActive="bg-green-600 text-white"
+                class="px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors">
+                Contractors
+            </a>
+            <a routerLink="/wageData" routerLinkActive="bg-green-600 text-white"
+                class="px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors">
+                Wage Data
+            </a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 overflow-auto p-4">
+        <ng-content></ng-content>
+    </main>
+</div>

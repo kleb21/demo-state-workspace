@@ -1,0 +1,228 @@
+<div class="space-y-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center">
+        <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
+        <div class="text-sm text-gray-500">{{ currentDate }}</div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-600">Total Projects</p>
+                    <p class="text-2xl font-bold text-gray-800">142</p>
+                </div>
+                <div class="bg-blue-100 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <p class="text-sm text-green-600 mt-2">↑ 12% from last month</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-600">Active Contractors</p>
+                    <p class="text-2xl font-bold text-gray-800">68</p>
+                </div>
+                <div class="bg-green-100 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <p class="text-sm text-green-600 mt-2">↑ 5% from last month</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-600">Total Revenue</p>
+                    <p class="text-2xl font-bold text-gray-800">$324K</p>
+                </div>
+                <div class="bg-yellow-100 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <p class="text-sm text-red-600 mt-2">↓ 3% from last month</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow p-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-600">Pending Tasks</p>
+                    <p class="text-2xl font-bold text-gray-800">23</p>
+                </div>
+                <div class="bg-purple-100 p-3 rounded-full">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">8 due this week</p>
+        </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Project Status Chart -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Project Status</h2>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Completed</span>
+                        <span class="font-medium text-gray-800">75 (53%)</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-green-600 h-2 rounded-full" style="width: 53%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">In Progress</span>
+                        <span class="font-medium text-gray-800">45 (32%)</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-blue-600 h-2 rounded-full" style="width: 32%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Pending</span>
+                        <span class="font-medium text-gray-800">22 (15%)</span>
+                    </div>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-yellow-600 h-2 rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Chart -->
+        <div class="bg-white rounded-lg shadow p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Weekly Activity</h2>
+            <div class="flex items-end justify-between h-48 space-x-2">
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-green-600 rounded-t" style="height: 45%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Mon</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-green-600 rounded-t" style="height: 68%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Tue</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-green-600 rounded-t" style="height: 85%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Wed</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-green-600 rounded-t" style="height: 52%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Thu</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-green-600 rounded-t" style="height: 75%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Fri</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-gray-300 rounded-t" style="height: 30%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Sat</span>
+                </div>
+                <div class="flex-1 flex flex-col items-center">
+                    <div class="w-full bg-gray-300 rounded-t" style="height: 25%"></div>
+                    <span class="text-xs text-gray-600 mt-2">Sun</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity Table -->
+    <div class="bg-white rounded-lg shadow">
+        <div class="p-6 border-b border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-800">Recent Activity</h2>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Project</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Status</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Contractor</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date
+                        </th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Amount</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Website Redesign</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span
+                                class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Completed</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">John Smith</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Feb 5, 2026</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$12,500</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Mobile App Dev</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">In
+                                Progress</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Sarah Johnson</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Feb 4, 2026</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$28,000</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Database Migration
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">In
+                                Progress</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Mike Chen</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Feb 3, 2026</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$8,500</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">API Integration</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span
+                                class="px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800">Pending</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Emily Davis</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Feb 2, 2026</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$15,200</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Security Audit</td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span
+                                class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Completed</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Robert Taylor</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">Feb 1, 2026</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$6,800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

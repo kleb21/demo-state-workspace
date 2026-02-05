@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcome } from './nx-welcome';
 import { UsernameService } from '@demo-workspace/shared';
 
+import { Layout } from '@demo-workspace/layout';
+
 @Component({
-  imports: [NxWelcome, RouterModule],
+  imports: [RouterModule, Layout],
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',

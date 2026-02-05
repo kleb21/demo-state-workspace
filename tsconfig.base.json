@@ -20,7 +20,8 @@
       "contractors/Routes": [
         "apps/contractors/src/app/remote-entry/entry.routes.ts"
       ],
-      "@demo-workspace/shared": ["libs/shared/src/index.ts"]
+      "@demo-workspace/shared": ["libs/shared/src/index.ts"],
+      "@demo-workspace/layout": ["libs/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
