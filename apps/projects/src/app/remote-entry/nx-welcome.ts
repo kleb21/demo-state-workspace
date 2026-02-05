@@ -5,7 +5,7 @@ import { UsernameService } from '@demo-workspace/shared';
 @Component({
   selector: 'app-nx-welcome',
   imports: [CommonModule],
-  template: `<h1>Welcome to Projects {{username}}!</h1>
+  template: `<h1>Welcome to Projects {{username}}! asdfsdfsdf</h1>
   `,
   styles: [],
   encapsulation: ViewEncapsulation.None,

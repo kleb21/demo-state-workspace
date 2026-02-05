@@ -1,4 +1,5 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
+import { enviroment } from './enviroments/enviroment';
 
 const config: ModuleFederationConfig = {
   name: 'monarch-main',
@@ -14,7 +15,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['projects', 'wageData', 'contractors'],
+  remotes: [['projects', enviroment.projects], ['wageData', enviroment.wageData], ['contractors', enviroment.contractors]],
   shared: (libraryName, defaultConfig) => {
     if (libraryName === '@demo-workspace/shared') {
       return {
