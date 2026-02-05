@@ -14,7 +14,6 @@ export class App implements OnInit {
   usernameService = inject(UsernameService);
 
   ngOnInit(): void {
-    // Guardar un username de demostración
     this.usernameService.saveUsername('Demo User');
     console.log('Username set in monarch-main app');
   }
