@@ -16,19 +16,19 @@
 To run the dev server for your app, use:
 
 ```sh
-npx nx serve first
+npx nx serve monarch-main
 ```
 
 To create a production bundle:
 
 ```sh
-npx nx build first
+npx nx build monarch-main
 ```
 
 To see all available targets to run for a project, run:
 
 ```sh
-npx nx show project first
+npx nx show project monarch-main
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
